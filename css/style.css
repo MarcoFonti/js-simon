@@ -5,6 +5,73 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: blue;
+/* TITOLO */
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #ff0000;
+    border: 1px solid #000000;
+    margin: 10px;
 }
+
+/* RECIPIENTE CONTENUTO */
+.recipe-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #000000;
+    margin: 30px;
+    padding: 30px;
+    background-color: #ffebcd;
+}
+
+/* BOTTONE INIZIA E RICOMINCIA */
+.recipe-button {
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    background-color: #d2691e;
+    cursor: pointer;
+}
+
+/* RECIPIENTE NUMERI CASUALI */
+.recipe-number {
+    display: flex;
+    gap: 30px;
+    font-size: 70px;
+}
+
+/* RECIPIENTE SECONDI RIMANENTI */
+.recipe-second {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin: 30px;
+}
+
+/* SECONDI RIMANENTI */
+.second-remaining {
+    text-align: center;
+    font-size: 50px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    padding: 10px 30px;
+    background-color: aliceblue;
+}
+
+/* INPUT DOVE SCRIVERA' L'UTENTE */
+input {
+    width: 100px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px;
+}
+
+/* BOTTTONE CONFERMA */
+.recipe-confirms {
+    padding: 10px 20px;
+    background-color: aqua;
+    cursor: pointer;
+}
+
