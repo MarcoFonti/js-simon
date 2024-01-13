@@ -10,32 +10,42 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- TITOLO -->
-    <h1>INDOVINA I 5 NUMERI</h1>
+    <header>
+        <!-- TITOLO -->
+        <h1>GIOCO DELLA MEMORIA</h1>
+        <!-- BOTTONE RICOMINCIA -->
+        <button class="button-restart">RICOMINCIA</button>
+    </header>
+    <!-- SEZIONI VINTO O PERSO -->
+    <section class="d-none won">
+        <strong>HAI VINTO</strong>
+    </section>
+    <section class="d-none lost">
+        <strong>HAI PERSO</strong>
+    </section>
     <!-- RECIPIENTE CONTENUTO -->
     <main class="recipe-main">
         <button class="recipe-button">INIZIA</button>
+        <h3 id="text-play">IL GIOCO CONSISTE NEL RICORDARE I 5 NUMERI CASUALI</h3>
         <div class="recipe-number">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
+           
         </div>
         <div class="recipe-second">
-            <p>SECONDI RIMANENTI</p>
-            <div class="second-remaining">5s</div>
+            <p class="text-second d-none">SECONDI RIMANENTI</p>
+            <div class="second-remaining d-none"></div>
         </div>
         <!-- FINITO I 30S -->
-        <h2>DIMMI I 5 NUMERI CHE RICORDI</h2>
-        <div>
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
+        <div class="d-none recipe-hidden">
+            <h2>DIMMI I 5 NUMERI CHE RICORDI</h2>
+            <div>
+                <input type="text" id="number-first">
+                <input type="text" id="number-second">
+                <input type="text" id="number-third">
+                <input type="text" id="number-fourth">
+                <input type="text" id="number-fifth">
+            </div>
+            <button class="recipe-confirms">CONFERMA</button>
         </div>
-        <button class="recipe-confirms">CONFERMA</button>
     </main>
 </body>
 </html>

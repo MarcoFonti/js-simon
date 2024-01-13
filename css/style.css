@@ -5,13 +5,52 @@
     box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    row-gap: 10px;
+}
+
+
 /* TITOLO */
 h1 {
     text-align: center;
     font-size: 40px;
     color: #ff0000;
-    border: 1px solid #000000;
-    margin: 10px;
+    width: 100%;
+    border: 4px double black;
+    width: 90%;
+}
+
+.button-restart {
+    font-size: 30px;
+    padding: 10px 20px;
+    background-color: #e6955b;
+}
+
+/* VITTORIA */
+.won {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    background-color: green;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* SCONFITTA */
+.lost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    background-color: red;
+    width: 90%;
+    margin: 0 auto;
 }
 
 /* RECIPIENTE CONTENUTO */
@@ -26,11 +65,11 @@ h1 {
     background-color: #ffebcd;
 }
 
-/* BOTTONE INIZIA E RICOMINCIA */
+/* BOTTONE INIZIA */
 .recipe-button {
     padding: 10px 20px;
     margin-bottom: 15px;
-    background-color: #d2691e;
+    background-color: green;
     cursor: pointer;
 }
 
@@ -74,4 +113,15 @@ input {
     background-color: aqua;
     cursor: pointer;
 }
+/* RECIPETE DOPO I 30S */
+.recipe-hidden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+/* NASCONDI */
+.d-none {
+    display: none;
+}
