@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* HEADER */
 header {
     display: flex;
     flex-direction: column;
@@ -13,7 +14,6 @@ header {
     margin: 30px;
     row-gap: 10px;
 }
-
 
 /* TITOLO */
 h1 {
@@ -25,6 +25,7 @@ h1 {
     width: 90%;
 }
 
+/* BOTTONE RICOMINCIA */
 .button-restart {
     font-size: 30px;
     padding: 10px 20px;
@@ -113,6 +114,7 @@ input {
     background-color: aqua;
     cursor: pointer;
 }
+
 /* RECIPETE DOPO I 30S */
 .recipe-hidden {
     display: flex;
