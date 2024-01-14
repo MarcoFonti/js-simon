@@ -120,12 +120,12 @@ buttonElement.addEventListener('click', () => {
     // CRONOMETRO DI 30S
     setInterval (() => {
 
-        if (score < 30) {
+        if (score < 3) {
             scoreTime = ++score + 's'
             secondRemainingElement.innerText = scoreTime
         }
 
-        if (score === 30) {
+        if (score === 3) {
             numberElement.classList.add('d-none');
             recipeSecondElement.classList.add('d-none');
             recipeHiddenElement.classList.remove('d-none');
@@ -158,15 +158,15 @@ recipeConfirmsButton.addEventListener('click', () => {
     console.log(arrayUser);
 
     // CONFRONTO SE I NUMERI DEI DUE ARRAY SONO UGUALI
-    const comparisonArray = arrayUser.toString() === arrayNumbers.toString()
+    const comparison = arrayUser.toString() === arrayNumbers.toString()
 
     // CONDIZIONE SE SONO UGUALI O DIVERSI
-    if (comparisonArray) {
+    if (comparison) {
         wonElement.classList.remove('d-none');
     } else {
         lostElement.classList.remove('d-none');
-    }
-    
+    } 
+
 })
 
 
